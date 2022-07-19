@@ -1,13 +1,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:multiplatform_app/flutter_dev_page.dart';
 
 import 'package:multiplatform_app/main.dart';
+import 'package:multiplatform_app/pages/html_page.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    await tester.pumpWidget(const FlutterDevPage());
+    await tester.pumpWidget(const HtmlPage());
 
     expect(find.text('0'), findsOneWidget);
     expect(find.text('1'), findsNothing);

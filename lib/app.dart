@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:multiplatform_app/flutter_dev_page.dart';
+import 'package:multiplatform_app/pages/html_page.dart';
+import 'package:multiplatform_app/pages/web_view_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -12,7 +13,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const FlutterDevPage(),
+        /// Отображает webView на мобильных ОС и Web
+      home: const WebViewPage()
+        /// Отображает html-код сайта на web, windows и mobile ОС
+      // home: const HtmlPage()
     );
   }
 }
